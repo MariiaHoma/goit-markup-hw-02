@@ -1,4 +1,4 @@
-.root {
+:root {
   --primary-white-color: #ffffff;
   --primary-text-color: #757575;
   --secondary-background-color: #2f303a;
@@ -26,10 +26,10 @@ body {
 }
 /*----------HEADER-----------*/
 header {
-  background: #ffffff;
+  background: var(--primary-white-color);
 }
 
-.header-logo {
+.logo {
   font-family: "Raleway";
   font-weight: 700; 
   font-size: 26px; 
@@ -46,23 +46,23 @@ header {
 
 .header-link:hover,
 .header-link:focus {
-    color:#2196F3;
+    color: var(--accent-color);
 }
 
 .contact-link {
   font-weight: 500; 
   line-height: 1.14; 
   letter-spacing: 0.02em; 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 /*------MAIN-----*/
-.business {
-    background: #2f303a;
+.business-section {
+    background: var(--secondary-background-color);
 }
 
 .title {
@@ -72,7 +72,7 @@ header {
   text-align: center; 
   letter-spacing: 0.06em; 
   text-transform: uppercase; 
-  color: #FFFFFF;
+  color: var(--primary-white-color);
 }
 
 .title-btn {
@@ -84,8 +84,8 @@ header {
   align-items: center; 
   text-align: center; 
   letter-spacing: 0.06em; 
-  color: #FFFFFF;
-  background: #2196F3; 
+  color: var(--primary-white-color);
+  background: var(--accent-color); 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
   border-radius: 4px;
 }
@@ -95,29 +95,29 @@ header {
   background: #188ce8;
 }
 /*----MAIN BEBEFITS-----*/
-.benefits {
-    background: #ffffff
+.benefit-section {
+    background: var(--primary-white-color);
 }
 
-.benefits-list {
+.benefit-list {
 }
 
-.benefit {
+.benefit-item {
 }
 
-.title-benefit {
+.benefit-title {
   font-size: 14px; 
   line-height: 1.14; 
   text-transform: uppercase; 
 }
 
-.text-benefit {
+.benefit-text {
   line-height: 1.71; 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /*-----MAIN WORK----*/
-.work {
-    background: #ffffff;
+.work-section {
+    background: var(--primary-white-color);
 }
 
 .section-title { 
@@ -127,16 +127,16 @@ header {
 }
 .work-list {
 }
-.work-photo {
+.work-item {
 }
 /*-----MAIN TEAM----*/
-.our-team {
-    background: #f5f4fa;
+.our-team-section {
+    background: var(--buttons-background);
 }
 
 .team-list {
 }
-.team {
+.team-item {
 }
 .team-photo {
 }
@@ -152,32 +152,18 @@ header {
   font-size: 16px; 
   line-height: 1.18; 
   text-align: center; 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /*-------FOOTER----*/
-.footer {
-    background: #2f303a;
+.footer-section {
+    background: var(--secondary-background-color);
 }
 
-.footer-logo-web {
-  font-family: "Raleway";
-  font-weight: 700; 
-  font-size: 26px; 
-  line-height: 1.19; 
-  letter-spacing: 0.03em; 
-  color: #2196F3;
+.footer-section > .logo {
+  color: var(--primary-white-color);
 }
 
-.footer-logo {
-  font-family: "Raleway";
-  font-weight: 700; 
-  font-size: 26px; 
-  line-height: 1.19; 
-  letter-spacing: 0.03em; 
-  color: var(--color-white);   
-}
-
-.address {
+.address-section {
 }
 .adress-list {
 }
@@ -185,7 +171,7 @@ header {
 .footer-map {
   font-style: normal;
   line-height: 1.71; 
-  color: #FFFFFF;
+  color: var(--primary-white-color);
 }
 
 .footer-contact-link {
@@ -196,18 +182,17 @@ header {
 
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 /*----PORTFOLIO----*/
 
 /*----MAIN BUTTTONS----*/
-.buttons {
-  background-color: #ffffff;
+.buttons-section {
+  background-color: var(--primary-white-color);
 }
 
 .buttons-list {
-
 }
 
 .btn {
@@ -217,29 +202,29 @@ header {
   line-height: 1.625; 
   text-align: center; 
   letter-spacing: 0.03em; 
-  color: #212121;
-  background: #F5F4FA; 
+  color: var(--title-text-color);
+  background: var(--buttons-background); 
   border-radius: 4px;
 }
 
 .btn:hover,
 .btn:focus {
-  background: #2196F3;
-  color:#ffffff;
+  background: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .projects-list {
 }
 
-.title-projects {
+.projects-title {
   font-size: 18px; 
   line-height: 2; 
   letter-spacing: 0.06em; 
-  color: #212121;
+  color: var(--title-text-color);
 }
 
-.text-projects { 
+.projects-text { 
   font-size: 16px; 
   line-height: 1.87; 
-  color: #757575;   
+  color: var(--primary-text-color);   
 }
